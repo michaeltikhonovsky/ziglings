@@ -64,11 +64,12 @@ pub fn main() void {
         .gold = 10,
         .experience = 20,
         .mentor = &mighty_krodor, // Glorp's mentor is the Mighty Krodor
+
     };
 
     // FIX ME!
     // Please pass Glorp to printCharacter():
-    printCharacter(???);
+    printCharacter(&glorp);
 }
 
 // Note how this function's "c" parameter is a pointer to a Character struct.
