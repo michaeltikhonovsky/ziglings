@@ -131,7 +131,8 @@ pub fn main() !void {
         for (0..size) |b| {
             // What formatting is needed here to make our columns
             // nice and straight?
-            print("{???} ", .{(a + 1) * (b + 1)});
+            // print(" {d: ^3}", .{(a + 1) * (b + 1)}); // this also works but has different offset for 2 and 3 digit nums
+            print("{d:>3} ", .{(a + 1) * (b + 1)});
         }
 
         // After each row we use double line feed:
